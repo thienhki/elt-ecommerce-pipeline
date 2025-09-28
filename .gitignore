@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+
+# Dữ liệu cục bộ (không push lên vì có thể nặng)
+data/
+
+# Environment file
+.env
+
+# Database config
+my.cnf
