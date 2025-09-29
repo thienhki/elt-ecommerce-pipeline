@@ -55,8 +55,8 @@ def transform_fact_orders():
                     'delivery_time', 'estimated_delivery_time']
     
     df_fact = df[fact_columns]
-    data = [tuple(row) for row in df_fact.to_numpy()]
     # Lưu dữ liệu vào bảng fact_orders
+    warehouse_operator.create_schema_if_not_exists('warehouse')
     warehouse_operator.save_data_to_postgres(
         'fact_orders',
         df_fact,

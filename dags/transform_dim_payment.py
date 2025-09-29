@@ -12,7 +12,7 @@ def transform_dim_payments():
 
     df = df.drop_duplicates(subset=['payment_type', 'payment_installments'])
 
-
+    warehouse_operator.create_schema_if_not_exists('warehouse')
     warehouse_operator.excute_query("TRUNCATE TABLE warehouse.dim_payments")
     warehouse_operator.save_data_to_postgres(
         'dim_payments',

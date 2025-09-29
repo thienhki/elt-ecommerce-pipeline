@@ -28,6 +28,7 @@ def transform_dim_dates():
     )
 
     #3. Lưu vào datawarehouse
+    warehouse_operator.create_schema_if_not_exists('warehouse')
     warehouse_operator.excute_query("TRUNCATE TABLE warehouse.dim_dates")
     warehouse_operator.save_data_to_postgres('dim_dates', df, False, schema='warehouse', if_exists='replace')
 

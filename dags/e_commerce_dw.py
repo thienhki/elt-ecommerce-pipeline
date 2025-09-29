@@ -12,6 +12,7 @@ from transform_dim_date import transform_dim_dates
 from transform_dim_payment import transform_dim_payments
 from transform_fact_orders import transform_fact_orders
 
+
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -27,7 +28,7 @@ with DAG(
     'e_commerce_dw_etl',
     default_args=default_args,
     description='ETL process for E-commerce Data Warehouse',
-    schedule_interval=timedelta(days=1)
+    schedule_interval="@daily",
 ) as dag:
 
     with TaskGroup("extract") as extract_group:

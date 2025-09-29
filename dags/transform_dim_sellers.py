@@ -21,9 +21,11 @@ def transform_dim_sellers():
     
     
     # 6. Truncate trước khi insert (Type 1)
+    warehouse_operator.create_schema_if_not_exists('warehouse')
     warehouse_operator.excute_query("TRUNCATE TABLE warehouse.dim_sellers")
     
     # 7. Insert vào warehouse
+ 
     warehouse_operator.save_data_to_postgres(
         table_name='dim_sellers',
         df=df,

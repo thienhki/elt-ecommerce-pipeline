@@ -27,6 +27,7 @@ def transform_dim_customer():
     df['is_current'] = True
     
     #5. Lưu dữ liệu vào bảng dim_customers
+    warehouse_operator.create_schema_if_not_exists('warehouse')
     warehouse_operator.excute_query("TRUNCATE TABLE warehouse.dim_customers")
     warehouse_operator.save_data_to_postgres('dim_customers', df, False, schema='warehouse',if_exists='replace')
 

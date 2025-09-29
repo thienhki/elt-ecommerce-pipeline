@@ -30,6 +30,7 @@ def transform_dim_products():
     df['last_updated'] = pd.Timestamp.now().date()
     
     # Lưu dữ liệu vào bảng dim_products
+    warehouse_operator.create_schema_if_not_exists('warehouse')
     warehouse_operator.excute_query("TRUNCATE TABLE warehouse.dim_products")
     warehouse_operator.save_data_to_postgres(
         'dim_products',

@@ -13,6 +13,7 @@ def transform_dim_geolocation():
     df['geolocation_state'] = df['geolocation_state'].str.upper()
 
     df['geolocation_key'] = df.index + 1
+    warehouse_operator.create_schema_if_not_exists('warehouse')
 
     warehouse_operator.excute_query("TRUNCATE TABLE warehouse.dim_geolocation")
 
