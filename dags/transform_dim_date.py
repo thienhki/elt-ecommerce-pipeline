@@ -14,7 +14,7 @@ def transform_dim_dates():
     df = pd.DataFrame(
         {
             # Surrogate key
-            'data_key' : date_range.strftime('%Y%m%d').astype(int),
+            'date_key' : date_range.strftime('%Y%m%d').astype(int),
             'full_date' : date_range,
             'day' : date_range.day,
             'month' : date_range.month,
