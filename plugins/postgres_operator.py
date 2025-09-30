@@ -46,7 +46,7 @@ class PostgresOperators:
         except Exception as e:
             logging.error(f"Error saving DataFrame to {table_name}: {e}", exc_info=True)
 
-    def excute_query(self, query):
+    def execute_query(self, query):
         conn = self.get_conn()
         try:
             cur = conn.cursor()

@@ -79,3 +79,4 @@ docker compose up -d
 - Full pipeline automated with Airflow.
 - Staging and warehouse data synchronized in PostgreSQL.
 - Metabase Dashboards:
+[Xem dashboard trên Metabase](http://localhost:3000/public/dashboard/xxxxx)
