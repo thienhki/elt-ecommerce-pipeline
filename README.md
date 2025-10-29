@@ -24,6 +24,7 @@ PostgreSQL (Staging → DWH)
 ↓
 Metabase (Visualization & BI)
 ```
+![Dashboard](images/ETL.png)
 
 ## 3. Technologies Used
 - **Python** → scripts for data extract/load.  
@@ -80,8 +81,4 @@ docker compose up -d
 - Staging and warehouse data synchronized in PostgreSQL.
 - Metabase Dashboards:
 ![Dashboard](images/dashboard.png)
-
-<img width="853" height="277" alt="image" src="https://github.com/user-attachments/assets/61770132-f758-48d8-814b-590fcacd563e" />
-
-
 
