@@ -24,7 +24,10 @@ PostgreSQL (Staging → DWH)
 ↓
 Metabase (Visualization & BI)
 ```
-![Dashboard](images/ETL.png)
+<p align="center">
+  <img src="images/ETL.png" alt="Dashboard" />
+</p>
+
 
 ## 3. Technologies Used
 - **Python** → scripts for data extract/load.  
