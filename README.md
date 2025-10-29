@@ -81,3 +81,6 @@ docker compose up -d
 - Metabase Dashboards:
 ![Dashboard](images/dashboard.png)
 
+<img width="480" height="270" alt="image" src="https://github.com/user-attachments/assets/ca4a4799-3d56-4090-b995-d9c63ea1d404" />
+
+
