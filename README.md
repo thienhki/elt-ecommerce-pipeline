@@ -73,9 +73,9 @@ docker compose up -d
 - **Step 4: Access services**
 - Airflow Webserver → http://localhost:8080
 
-- PostgreSQL → localhost:5432
+- PostgreSQL → http://localhost:5432
 
-- MySQL → localhost:3307
+- MySQL → http://localhost:3307
 
 - Metabase → http://localhost:3000
 
